@@ -29,8 +29,8 @@ INDIGNITY_RESPONSES = ["Wir sollten nett zueinander sein.", "Wenn du meinst.", "
 nltk.download('popular', quiet=True) 
 
 # Für den ersten Start, ansonsten auskommentieren
-#nltk.download('punkt') 
-#nltk.download('wordnet') 
+nltk.download('punkt') 
+nltk.download('wordnet') 
 
 
 # Corpus einlesen
@@ -82,8 +82,10 @@ def response(user_response):
         robo_response = robo_response+sent_tokens[idx]
         return robo_response
 
-'''Ausgabe
-(Um die Konsolenausgabe übersichtlicher zu gestalten wird die Bibliothek termcolor benutzt)'''
+'''
+Ausgabe
+(Um die Konsolenausgabe übersichtlicher zu gestalten wird die Bibliothek termcolor benutzt)
+'''
 flag=True
 clear = lambda: os.system('clear')
 clear()
